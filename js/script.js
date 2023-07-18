@@ -35,16 +35,25 @@ document.querySelector('#login-btn').onclick = () =>
 }
 
 
-let navbar = document.querySelector('.navbar');
-document.querySelector('#menu-btn').onclick = () =>
-{
-    navbar.classList.toggle('active');
+// let navbar = document.querySelector('.navbar');
+// document.querySelector('#menu-btn').onclick = () =>
+// {
+//     navbar.classList.toggle('active');
 
-    searchForm.classList.remove('active');
-    shoppingCart.classList.remove('active');
-    loginForm.classList.remove('active');
+//     searchForm.classList.remove('active');
+//     shoppingCart.classList.remove('active');
+//     loginForm.classList.remove('active');
     
-}
+// }
+const navbarToggler = document.getElementById('navbar-toggler');
+const navbar = document.getElementById('navbar');
+
+navbarToggler.addEventListener('click', () => {
+  navbar.classList.toggle('active');
+});
+
+
+
 
  window.onscroll = () =>
 {

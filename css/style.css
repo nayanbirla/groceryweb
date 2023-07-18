@@ -149,11 +149,6 @@ section
     transition: .4s linear;
 }
 
-{
-    right: 2rem;
-    transition: .4s linear;
-
-}
 .header .search-form
 {
     border: 0px solid;
@@ -324,7 +319,7 @@ header .login-form p
 {
     font-size: 1.4rem;
     padding: .5rem 0;
-    color:var(--light-color));
+    color:var(--light-color);
 
 }
 
@@ -830,3 +825,57 @@ header .login-form p a
 }
 
 
+
+.navbar {
+    display: flex;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+  .navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-nav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav li:last-child {
+    margin-bottom: 0;
+  }
+
+  .navbar-nav li a {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .nav-item {
+    margin: 0 10px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-nav {
+      display: none;
+    }
+  
+    .navbar.active .navbar-nav {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .navbar-toggler.active + .navbar-nav {
+        display: block;
+      }
+  }
+  
