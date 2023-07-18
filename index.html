@@ -19,20 +19,25 @@
  <!-- header section-->  
 <header class = "header">
 <a href="#" class = "logo"><i class="fa fa-shopping-basket"></i>Grocery</a>
-    <nav class ="navbar">
-        <a href="#Home">Home</a>
-        <a href="#Features">Features</a>
-        <a href="#Products">Products</a>
-        <a href="#Categories">Categories</a>
-        <a href="#Review">Review</a>
-        <a href="#Blogs">Blogs</a>
+<button class="navbar-toggler" id="navbar-toggler">
+    <span class="navbar-toggler-icon"></span>
+</button>
+    <nav class ="navbar" id ="navbar">
+            <ul class="navbar-nav">
+              <li ><a class="nav-link" href="#Home">Home</a></li>
+              <li ><a class="nav-link" href="#Features">Features</a></li>
+              <li ><a class="nav-link" href="#Products">Products</a></li>
+              <li ><a class="nav-link" href="#Categories">Categories</a></li>
+              <li ><a class="nav-link" href="#Review">Review</a></li>
+              <li ><a class="nav-link" href="#Blogs">Blogs</a></li>
+            </ul>
     </nav>
     <div class ="icons">
          <div class =" fa fa-bars" id ="menu-btn"></div>
          <div class =" fa fa-search" id ="search-btn"></div>
          <div class =" fa fa-shopping-cart" id ="cart-btn"></div>
          <div class =" fa fa-user" id ="login-btn"></div>
-      
+
     </div>
     <form class="search-form">
         <input type="search" id="search-box" placeholder="Search Here...">
@@ -597,5 +602,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
