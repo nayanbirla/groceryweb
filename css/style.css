@@ -864,7 +864,7 @@ header .login-form p a
     color: #333;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 368px) {
     .navbar-nav {
       display: none;
     }
